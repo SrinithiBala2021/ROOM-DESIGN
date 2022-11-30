@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Room Design</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: lightblue">
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-plane position="0 -10 -4" rotation="-90 0 0" width="45" height="25" src="floor.jpg" shadow></a-plane>
+        <a-plane position="0 10 -4" rotation="90 0 0" width="40" height="25" color="white" ></a-plane>
+        <a-plane position="0 0 -18" rotation="0 0 0" width="42" height="21" src="centerw.jpg" ></a-plane>
+        <a-plane position="20 0 0" rotation="0 -90 0" width="35" height="20" src="sidewall1.webp"></a-plane> 
+        <a-plane position="-20 0 0" rotation="0 90 0" width="35" height="20" src="sidewall1.webp"></a-plane>
+
+        <a-plane position="19 0 -11" rotation="0 -90 0" width="5" height="9" src="P1.jpg"></a-plane> 
+        <a-plane position="19 0 -5" rotation="0 -90 0" width="5" height="9" src="P2.jpg"></a-plane> 
+        <a-plane position="19 0 0.5" rotation="0 -90 0" width="5" height="9" src="P3.jpg"></a-plane> 
+
+
+        <a-box position="0 0.6 -2" color="black" height="4" width="8.5"></a-box>
+        <a-box position="0 0.6 -1" color="white" height="4" width="7.5" src="TV.jpeg" ></a-box>
+        <a-box position="0 -4 -2" src="sofa.jpeg" height="3" width="15" ></a-box>
+
+        <a-box position="-12.5 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-12.5 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-12.5 -3 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-12.5 -3 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-11.5 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-11.2 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-10.9 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+        <a-box position="-10.3 -5 0.5"  rotation="0 90 0" src="sofa.jpeg" height="2" width="8" ></a-box>
+
+        <a-sphere position="-11 -3 0" rotation="0 -90 0" src="Cushion.jpg" radius="0.8" ></a-sphere>
+        <a-sphere position="-11 -3 2.8" rotation="0 -90 0" src="Cushion.jpg" radius="0.8" ></a-sphere>
+
+        <a-box position="0 -3 4" rotation="0,90,0" src="glass.jpg" height="0.5" width="5" shadow></a-box>
+        <a-box position="2 -5 4" color="black" height="3.5" width="0.5" ></a-box>
+        <a-box position="-2 -5 4" color="black" height="3.5" width="0.5" ></a-box>
+        <a-box position="0 -5 4" rotation="0,90,0" color="black" height="0.5" width="4" shadow></a-box>
+        
+        <a-box position="5 -3 4" height="3" width="0.5" src="Chair.jpg" shadow></a-box>
+        <a-box position="4.3 -4.5 4"  height="0.5" width="2" src="Chair.jpg" shadow></a-box>
+
+        <a-box position="-5 -3 4" height="3" width="0.5" src="Chair.jpg" shadow></a-box>
+        <a-box position="-4.3 -4.5 4"  height="0.5" width="2" src="Chair.jpg" shadow></a-box>
+
+        <a-cylinder position="3.5 -6 3.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="-3.5 -6 3.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="5.5 -6 3.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="-5.5 -6 3.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="5.4 -6 4.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="-5.4 -6 4.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="3.5 -6 4.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cylinder position="-3.5 -6 4.2" radius="0.1" height="3" color="black" shadow></a-cylinder>
+
+        <a-plane id="carpet" src="rug.jpg"
+        position="0 -7 2.5" rotation="-90 0 0" width="20" height="5"></a-plane>
+
+        <a-cylinder position="0 5 4" radius="0.1" height="3" color="black" shadow></a-cylinder>
+        <a-cone position="0 4 4" radius="0.1" height="1" src="sofa.jpeg"></a-cone>
+        <a-sphere position="0 3.5 4" radius="0.5" src="glass.jpg"></a-sphere>
+        
+        <a-box position="-15 3 4" rotation="0 -90 0" color="white" height="7" width="4" src="sofa.jpeg"></a-box>
+        <a-box position="-15 1 4" rotation="0 -90 0" color="white" height="7" width="4" src="sofa.jpeg"></a-box>
+        <a-box position="-14.85 3 4" rotation="0 -90 0" color="white" src="Books.jpg" height="6" width="3"></a-box>
+        <a-box position="-14.85 1 4" rotation="0 -90 0" color="white" src="Books.jpg" height="6" width="3"></a-box>
+    </a-scene>
+</body>
+
+</html>
